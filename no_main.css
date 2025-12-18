@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87ceeb 0%, #98d8e8 70%, #333 100%);
+  position: relative;
+}
+
+.road {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  background: linear-gradient(to bottom, #333 0%, #555 100%);
+  margin-top: 300px;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  bottom: 100px;    
+  width: 200px;
+  animation-name: drive;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drive {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: calc(100vw - 250px);
+  }
+}
+
+.body {
+  width: 200px;
+  height: 60px;
+  background: #e74c3c;
+  border-radius: 20px 20px 10px 10px;
+  position: relative;
+}
+
+.cabin {
+  width: 90px;
+  height: 40px;
+  background: #e74c3c;
+  border-radius: 25px 25px 5px 5px;
+  position: absolute;
+  top: -35px;
+  left: 45px;
+}
+
+.window {
+  width: 55px;
+  height: 25px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  position: absolute;
+  top: 7px;
+  left: 17px;
+}
+
+.bumper {
+  width: 30px;
+  height: 10px;
+  background: #bdc3c7;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+}
+
+.wheel {
+  width: 32px;
+  height: 32px;
+  background: #2c3e50;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -18px;
+}
+
+.disk {
+  width: 16px;
+  height: 16px;
+  background: #ecf0f1;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.wheel.left {
+  left: 25px;
+}
+
+.wheel.right {
+  right: 25px;
+}
