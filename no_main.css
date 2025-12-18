@@ -7,15 +7,6 @@ body {
   position: relative;
 }
 
-.road {
-  position: relative;
-  width: 100vw;
-  height: 200px;
-  background: linear-gradient(to bottom, #333 0%, #555 100%);
-  margin-top: 300px;
-  overflow: hidden;
-}
-
 .car {
   position: absolute;
   bottom: 100px;    
